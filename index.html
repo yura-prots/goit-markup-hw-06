@@ -76,6 +76,45 @@
                   <use href="./images/icons/sprite.svg#close"></use>
                 </svg>
               </button>
+
+              <form class="modal-form">
+                <label for="user-name">Ім'я</label>
+                <input type="text" name="user-name" id="user-name" />
+                <br />
+
+                <label for="user-phone">Телефон</label>
+                <input type="tel" name="user-phone" id="user-phone" />
+                <br />
+
+                <label for="user-email">Пошта</label>
+                <input type="email" name="user-email" id="user-email" />
+                <br />
+
+                <label for="user-comment">Коментар</label>
+                <textarea
+                  name="user-comment"
+                  id="user-comment"
+                  cols="30"
+                  rows="10"
+                  placeholder="Введіть текст"
+                ></textarea>
+                <br />
+
+                <input
+                  type="checkbox"
+                  name="user-contract"
+                  id="user-contract"
+                />
+                <label for="user-contract"
+                  >Погоджуюся з розсилкою та приймаю
+                  <a href="" target="_blank" rel="noopener noreferrer"
+                    >Умови договору</a
+                  ></label
+                >
+                <br />
+
+                <button type="submit">Відправити</button>
+              </form>
             </div>
           </div>
         </div>
@@ -576,5 +615,17 @@
     </footer>
 
     <script src="./js/modal.js"></script>
+
+    <script>
+      (() => {
+        document.querySelector('.modal-form').addEventListener('submit', e => {
+          e.preventDefault();
+
+          new FormData(e.currentTarget).forEach((value, name) =>
+            console.log(`${name}: ${value}`)
+          );
+        });
+      })();
+    </script>
   </body>
 </html>
