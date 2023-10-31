@@ -78,40 +78,48 @@
               </button>
 
               <form class="modal-form">
-                <label for="user-name">Ім'я</label>
-                <input type="text" name="user-name" id="user-name" />
-                <br />
+                <h2 class="form-title">
+                  Залиште свої дані, ми вам передзвонимо
+                </h2>
 
-                <label for="user-phone">Телефон</label>
-                <input type="tel" name="user-phone" id="user-phone" />
-                <br />
+                <div class="form-field">
+                  <label for="user-name">Ім'я</label>
+                  <input type="text" name="user-name" id="user-name" />
+                </div>
 
-                <label for="user-email">Пошта</label>
-                <input type="email" name="user-email" id="user-email" />
-                <br />
+                <div class="form-field">
+                  <label for="user-phone">Телефон</label>
+                  <input type="tel" name="user-phone" id="user-phone" />
+                </div>
 
-                <label for="user-comment">Коментар</label>
-                <textarea
-                  name="user-comment"
-                  id="user-comment"
-                  cols="30"
-                  rows="10"
-                  placeholder="Введіть текст"
-                ></textarea>
-                <br />
+                <div class="form-field">
+                  <label for="user-email">Пошта</label>
+                  <input type="email" name="user-email" id="user-email" />
+                </div>
 
-                <input
-                  type="checkbox"
-                  name="user-contract"
-                  id="user-contract"
-                />
-                <label for="user-contract"
-                  >Погоджуюся з розсилкою та приймаю
-                  <a href="" target="_blank" rel="noopener noreferrer"
-                    >Умови договору</a
-                  ></label
-                >
-                <br />
+                <div class="form-field">
+                  <label for="user-comment">Коментар</label>
+                  <textarea
+                    name="user-comment"
+                    id="user-comment"
+                    rows="10"
+                    placeholder="Введіть текст"
+                  ></textarea>
+                </div>
+
+                <div class="form-field">
+                  <input
+                    type="checkbox"
+                    name="user-contract"
+                    id="user-contract"
+                  />
+                  <label for="user-contract"
+                    >Погоджуюся з розсилкою та приймаю
+                    <a href="" target="_blank" rel="noopener noreferrer"
+                      >Умови договору</a
+                    ></label
+                  >
+                </div>
 
                 <button type="submit">Відправити</button>
               </form>
