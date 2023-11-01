@@ -389,10 +389,11 @@ img {
 
 .checkbox-label {
   display: inline-block;
-  align-items: center;
+  /* align-items: center; */
 
   margin-top: 0;
   margin-bottom: 20px;
+  width: 100%;
 
   font-size: 14px;
   font-weight: 400;
@@ -408,6 +409,7 @@ img {
 
 .checkbox-icon {
   display: inline-block;
+  /* align-items: center; */
 
   width: 16px;
   height: 15px;
