@@ -292,6 +292,7 @@ img {
   position: absolute;
   top: 8px;
   right: 8px;
+  padding: 0;
 
   width: 30px;
   height: 30px;
@@ -305,6 +306,7 @@ img {
 
 .data-modal-icon {
   display: block;
+  margin: 0 auto;
 }
 
 /* Форма підписки */
