@@ -108,23 +108,26 @@
                   </div>
                 </div>
 
-                <div class="checkbox">
+                <label class="checkbox-label">
                   <input
+                    class="checkbox"
                     type="checkbox"
                     name="user-contract"
-                    id="user-contract"
                   />
-                  <label for="user-contract"
-                    >Погоджуюся з розсилкою та приймаю
-                    <a
-                      class="checkbox-link"
-                      href=""
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Умови договору</a
-                    ></label
+                  <span class="checkbox-icon">
+                    <svg class="icon-check" width="16" height="15">
+                      <use href="./images/icons/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  Погоджуюся з розсилкою та приймаю
+                  <a
+                    class="checkbox-link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Умови договору</a
                   >
-                </div>
+                </label>
 
                 <button type="submit">Відправити</button>
               </form>
