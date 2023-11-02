@@ -276,7 +276,6 @@ img {
   transition: transform 250ms var(--hover-focus-time);
 
   width: 528px;
-  height: 581px;
 
   border-radius: 4px;
   background-color: var(--primary-bg-color);
@@ -304,7 +303,7 @@ img {
   cursor: pointer;
 }
 
-.data-modal-icon {
+.data-modal-close-icon {
   display: block;
   margin: 0 auto;
 }
@@ -388,8 +387,8 @@ img {
 /* Checkbox */
 
 .checkbox-label {
-  display: inline-block;
-  /* align-items: center; */
+  display: flex;
+  align-items: center;
 
   margin-top: 0;
   margin-bottom: 20px;
@@ -403,14 +402,10 @@ img {
   color: var(--primary-text-color);
 }
 
-.checkbox {
-  appearance: none;
-}
-
 .checkbox-icon {
   display: inline-block;
-  /* align-items: center; */
 
+  margin-right: 7px;
   width: 16px;
   height: 15px;
 
