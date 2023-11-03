@@ -89,11 +89,9 @@
                     type="text"
                     name="user-name"
                   />
-                  <span>
-                    <svg width="18" height="18">
-                      <use href="./images/icons/sprite.svg#person-black"></use>
-                    </svg>
-                  </span>
+                  <svg class="form-field-icon" width="18" height="18">
+                    <use href="./images/icons/sprite.svg#person-black"></use>
+                  </svg>
                 </label>
 
                 <label class="form-field"
@@ -103,11 +101,9 @@
                     type="tel"
                     name="user-phone"
                   />
-                  <span>
-                    <svg width="18" height="18">
-                      <use href="./images/icons/sprite.svg#phone-black"></use>
-                    </svg>
-                  </span>
+                  <svg class="form-field-icon" width="18" height="18">
+                    <use href="./images/icons/sprite.svg#phone-black"></use>
+                  </svg>
                 </label>
 
                 <label class="form-field"
@@ -117,21 +113,18 @@
                     type="email"
                     name="user-email"
                   />
-                  <span>
-                    <svg width="18" height="18">
-                      <use href="./images/icons/sprite.svg#email-black"></use>
-                    </svg>
-                  </span>
+                  <svg class="form-field-icon" width="18" height="18">
+                    <use href="./images/icons/sprite.svg#email-black"></use>
+                  </svg>
                 </label>
 
                 <label class="form-field"
                   ><span class="form-field-label">Коментар</span>
-                  <div class="textarea-box">
-                    <textarea
-                      name="user-comment"
-                      placeholder="Введіть текст"
-                    ></textarea>
-                  </div>
+                  <textarea
+                    class="form-textarea"
+                    name="user-comment"
+                    placeholder="Введіть текст"
+                  ></textarea>
                 </label>
 
                 <label class="checkbox-label">
@@ -140,11 +133,13 @@
                     type="checkbox"
                     name="user-contract"
                   />
+
                   <span class="checkbox-icon">
                     <svg class="icon-check" width="16" height="15">
                       <use href="./images/icons/sprite.svg#icon-check"></use>
                     </svg>
                   </span>
+
                   Погоджуюся з розсилкою та приймаю
                   <a
                     class="checkbox-link"
@@ -657,17 +652,5 @@
     </footer>
 
     <script src="./js/modal.js"></script>
-
-    <script>
-      (() => {
-        document.querySelector('.modal-form').addEventListener('submit', e => {
-          e.preventDefault();
-
-          new FormData(e.currentTarget).forEach((value, name) =>
-            console.log(`${name}: ${value}`)
-          );
-        });
-      })();
-    </script>
   </body>
 </html>
