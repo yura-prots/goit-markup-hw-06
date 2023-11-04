@@ -360,6 +360,8 @@ img {
 }
 
 .form-field-input {
+  display: block;
+
   margin-bottom: 10px;
   padding: 12px 12px 12px 44px;
 
@@ -394,6 +396,8 @@ img {
 /* Textarea */
 
 .form-textarea {
+  display: block;
+
   margin-bottom: 20px;
   padding: 12px 16px;
 
