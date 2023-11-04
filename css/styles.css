@@ -276,6 +276,7 @@ img {
   transition: transform 250ms var(--hover-focus-time);
 
   width: 528px;
+  height: 581px;
 
   border-radius: 4px;
   background-color: var(--primary-bg-color);
@@ -451,6 +452,10 @@ img {
 
   transition: background-color 250ms var(--hover-focus-time),
     border-color 250ms var(--hover-focus-time);
+}
+
+.checkbox-label:focus > .checkbox-icon {
+  border: 2px solid var(--accent-color);
 }
 
 .icon-check {
@@ -993,6 +998,10 @@ img {
   color: var(--primary-bg-color);
 }
 
+.footer-form-field {
+  display: flex;
+}
+
 .footer-form-input {
   margin-right: 12px;
   padding: 15px;
@@ -1021,6 +1030,9 @@ img {
 .footer-form-btn {
   margin: 0;
   padding: 10px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   text-align: center;
   font-size: 16px;
